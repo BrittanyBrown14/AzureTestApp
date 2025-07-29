@@ -4,11 +4,14 @@
 # https://aka.ms/yaml
 
 # specific branch build with batching
+# trigger:
+#   batch: true
+#   branches:
+#     include:
+#     - master
+
 trigger:
-  batch: true
-  branches:
-    include:
-    - master
+- master
 
 pool:
   vmImage: windows-latest
